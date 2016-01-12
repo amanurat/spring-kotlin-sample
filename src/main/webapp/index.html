@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="kotlinApp">
+<head>
+    <title>Humans under kotlin</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script src="./js/app.js"></script>
+
+</head>
+<body ng-controller="kotlinCtrl">
+<h1>Humans</h1>
+
+<button class="btn " ng-click="getHumans()">Inspiring humans under </button>
+<input type="text" ng-model="ageMax"/>
+
+<ul>
+    <li ng-repeat="h in humans" ><span ng-model="h.name">{{h.name}}</span> {{h.age}}</li>
+</ul>
+</body>
+</html>
